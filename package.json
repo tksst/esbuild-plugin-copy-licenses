@@ -1,35 +1,27 @@
 {
-  "name": "your-package-name-here",
-  "version": "0.0.0-development",
-  "private": true,
-  "description": "description",
-  "homepage": "https://example.example/your-website",
-  "repository": "github:tksst/repository-name",
-  "license": "CC0-1.0",
+  "name": "esbuild-plugin-copy-licenses",
+  "version": "0.0.0-alpha",
+  "description": "Copy license files of bundled dependencies.",
+  "homepage": "https://github.com/tksst/esbuild-plugin-copy-licenses",
+  "repository": "github:tksst/esbuild-plugin-bundles-list",
+  "license": "Apache-2.0",
   "author": {
     "name": "Takashi Sato",
     "email": "takashi@tks.st",
     "url": "https://www.tks.st/"
   },
-  "type": "commonjs",
-  "main": "./dist/lib/index.js",
+  "type": "module",
   "exports": {
-    "import": "./dist/lib/index.mjs",
-    "require": "./dist/lib/index.js"
+    "import": "./dist/lib/index.js"
   },
   "types": "./dist/lib/index.d.ts",
-  "bin": {
-    "typescript-node-starter": "./dist/bin/index.mjs"
-  },
   "scripts": {
     "clean": "tss-rmrf ./dist/",
     "build": "run-s --continue-on-error clean build:*",
     "build:lib": "tsup --config ./tsup.config.lib.mjs",
-    "build:bin": "tsup --config ./tsup.config.bin.mjs",
     "prepack": "pnpm build",
     "watch": "npm-run-all clean --parallel --continue-on-error --print-label watch:*",
     "watch:lib": "pnpm build:lib --watch",
-    "watch:bin": "pnpm build:bin --watch",
     "fix": "run-s --continue-on-error fix:*",
     "fix:prettier": "pnpm lint:prettier --write",
     "fix:eslint": "pnpm lint:eslint --fix",
