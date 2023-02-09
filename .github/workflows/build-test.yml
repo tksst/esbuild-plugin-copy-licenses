@@ -1,0 +1,16 @@
+name: Build and Test
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+  push:
+    # branches:
+    # branches-ignore:
+    #  - master
+    #  - alpha
+
+jobs:
+  build-test:
+    name: Build, Lint and Test
+    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@6495ac6b96f806e689d068ea293b2e820dd14104
