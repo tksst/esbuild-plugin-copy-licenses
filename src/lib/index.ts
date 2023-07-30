@@ -18,7 +18,7 @@ async function copyFiles(
     srcDir: string,
     targetDir: string,
     searchNames: readonly string[],
-    ignoreCase: boolean
+    ignoreCase: boolean,
 ): Promise<void> {
     await fs.mkdir(targetDir, { recursive: true });
 
@@ -115,7 +115,7 @@ export default function copyBundlesLicenses(options: Options = {}): Plugin {
                         path.dirname(packageJsonPath),
                         path.join(clfDirectoryPath, `${packageJson.name}@${packageJson.version}`),
                         licenseFileNamePrefixes,
-                        licenseFileNameIgnoreCase
+                        licenseFileNameIgnoreCase,
                     );
                 }
             }
