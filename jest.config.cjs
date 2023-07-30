@@ -1,4 +1,4 @@
 module.exports = {
-    ...require("@tksst/typescript-starter-configs/jest.config.cjs"),
+    ...require("@tksst/project-configs/jest.config.cjs"),
     extensionsToTreatAsEsm: [".ts"],
 };
