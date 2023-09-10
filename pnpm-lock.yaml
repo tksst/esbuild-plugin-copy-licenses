@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   esbuild-plugin-bundles-list:
-    specifier: 0.0.4
-    version: 0.0.4(esbuild@0.14.0)
+    specifier: 0.1.0
+    version: 0.1.0(esbuild@0.14.0)
 
 devDependencies:
   '@changesets/cli':
@@ -2480,8 +2480,8 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /compare-versions@6.0.0-rc.1:
-    resolution: {integrity: sha512-cFhkjbGY1jLFWIV7KegECbfuyYPxSGvgGkdkfM+ibboQDoPwg2FRHm5BSNTOApiauRBzJIQH7qvOJs2sW5ueKQ==}
+  /compare-versions@6.1.0:
+    resolution: {integrity: sha512-LNZQXhqUvqUTotpZ00qLSaify3b4VFD588aRr8MKFw4CMUr98ytzCW5wDH5qx/DEY5kCDXcbcRuCqL0szEf2tg==}
     dev: false
 
   /concat-map@0.0.1:
@@ -2868,13 +2868,13 @@ packages:
     requiresBuild: true
     optional: true
 
-  /esbuild-plugin-bundles-list@0.0.4(esbuild@0.14.0):
-    resolution: {integrity: sha512-2TWq7sFwqj8/UkQcmaU9ju1adIzv5pZQAHAs48ryogvJQY3bjXaMvMjYf8E/QbDSrXoeWINTgVUkbI/vCZFg1w==}
+  /esbuild-plugin-bundles-list@0.1.0(esbuild@0.14.0):
+    resolution: {integrity: sha512-ec5x2sRc4S0OCCh+UfEP2zAKzq7JVMPqw3ARW/qGDm0vxnhteSRWWLDr5BXXjnfJYN1T48F5o70LPa6/zmHDGw==}
     engines: {node: '>= 14'}
     peerDependencies:
       esbuild: ^0.14.0 || ^0.15.0 || ^0.16.0 || ^0.17.0
     dependencies:
-      compare-versions: 6.0.0-rc.1
+      compare-versions: 6.1.0
       esbuild: 0.14.0
       read-pkg-up: 9.1.0
     dev: false
