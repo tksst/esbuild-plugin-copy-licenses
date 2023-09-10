@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-copy-licenses",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Copy license files of bundled dependencies.",
   "homepage": "https://github.com/tksst/esbuild-plugin-copy-licenses",
   "repository": "github:tksst/esbuild-plugin-bundles-list",
