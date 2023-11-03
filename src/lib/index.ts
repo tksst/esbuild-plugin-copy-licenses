@@ -25,7 +25,7 @@ async function copyFiles(
     const files = await fs.readdir(srcDir);
 
     for (const file of files) {
-        if (searchNames.find(compare.bind(null, ignoreCase, file)) !== undefined) {
+        if (searchNames.some(compare.bind(null, ignoreCase, file))) {
             // eslint-disable-next-line no-await-in-loop
             await fs.copyFile(path.join(srcDir, file), path.join(targetDir, file), fsConstants.COPYFILE_FICLONE);
         }
