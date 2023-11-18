@@ -119,4 +119,4 @@ jobs:
       - build-lint
     runs-on: ubuntu-22.04
     steps:
-      - uses: Kesin11/actions-timeline@fbbb6f71498dbdb3af862970133257532cd48054 # v1.0.0
+      - uses: Kesin11/actions-timeline@baa62e018ca5504e2d617502ce1eacf9171e757a # v2.0.1
