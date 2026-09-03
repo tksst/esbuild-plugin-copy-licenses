@@ -34,7 +34,7 @@
     "test:unit": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --ci"
   },
   "devDependencies": {
-    "@changesets/cli": "2.27.10",
+    "@changesets/cli": "3.0.1",
     "@secretlint/secretlint-rule-preset-recommend": "9.0.0",
     "@swc/core": "1.9.2",
     "@swc/jest": "0.2.37",
