@@ -50,7 +50,7 @@
     "jest": "29.7.0",
     "npm-run-all2": "7.0.1",
     "prettier": "3.3.3",
-    "secretlint": "9.0.0",
+    "secretlint": "14.1.0",
     "tsup": "8.3.5",
     "typescript": "5.6.3"
   },
